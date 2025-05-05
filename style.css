@@ -1,0 +1,357 @@
+html {
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background: rgb(0, 0, 255);
+    background: -webkit-linear-gradient(90deg,
+            rgb(0, 0, 255) 0%,
+            rgb(85, 0, 225) 50%,
+            rgb(120, 175, 250) 100%);
+    background: -moz-linear-gradient(90deg,
+            rgb(0, 0, 255) 0%,
+            rgb(85, 0, 225) 50%,
+            rgb(120, 175, 250) 100%);
+    background: linear-gradient(90deg,
+            rgb(0, 0, 255) 0%,
+            rgb(85, 0, 225) 50%,
+            rgb(120, 175, 250) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="rgb(0, 0, 255)", endColorstr="rgb(120, 175, 250)", GradientType=1);
+    max-width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#header,
+#header>#heading {
+    width: 100%;
+    height: fit-content;
+}
+
+#heading {
+    font-size: 2.5vw;
+    text-align: center;
+    top: 0;
+    padding: 1%;
+    margin: 0%;
+    font-weight: 700;
+    text-transform: none;
+    text-decoration: underline wavy aliceblue;
+    text-shadow: -10px 5px 8px blue;
+    box-shadow: none;
+}
+
+#header>marquee>label#quote {
+    font-size: large;
+    font-weight: 500;
+    text-transform: none;
+    text-shadow: -10px 5px 8px blue;
+    box-shadow: none;
+}
+
+#contents {
+    margin: auto;
+}
+
+#about-VGames {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-VGames-para {
+    flex: 1;
+    text-align: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+#VGames-logo {
+    width: 130px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.tiny {
+    width: 2%;
+    height: 2%;
+}
+
+#credits {
+    color: aliceblue;
+}
+
+ibu {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline solid;
+    color: wheat;
+}
+
+h2 {
+    position: relative !important;
+    font-size: large !important;
+    font-weight: 700 !important;
+    background-color: rgb(14, 25, 170);
+    color: cyan;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 23px;
+    cursor: default;
+    box-shadow: -10px -5px 20px aqua, 10px 5px 20px red;
+    transition: all 0.3s ease-in-out;
+}
+
+h2:hover {
+    background-color: rgb(17, 35, 200);
+    color: rgb(96, 255, 255);
+    box-shadow: -9px 5px 20px aqua, 9px -5px 20px red, 0px 0px 25px white;
+    transform: scale(1.05) translate(0px, -2px);
+}
+
+h2:active {
+    background-color: rgb(2, 18, 163);
+    color: rgb(45, 203, 231);
+    box-shadow: -7px -3px 20px aqua, 7px 3px 20px red;
+}
+
+img#VGames-logo {
+    transition: 0.5s;
+}
+
+img#VGames-logo:hover {
+    transform: scale(1.2) rotateY(360deg);
+}
+
+p {
+    border: 2px wheat solid;
+    border-radius: 12px;
+    width: fit-content;
+    background: rgb(0, 0, 255);
+    background: -webkit-linear-gradient(0deg,
+            rgb(0, 0, 220) 0%,
+            rgb(85, 0, 225) 75%,
+            rgb(120, 100, 250) 100%);
+    background: -moz-linear-gradient(0deg,
+            rgb(0, 0, 220) 0%,
+            rgb(85, 0, 225) 75%,
+            rgb(120, 100, 250) 100%);
+    background: linear-gradient(9deg,
+            rgb(0, 0, 220) 0%,
+            rgb(85, 0, 225) 75%,
+            rgb(120, 100, 250) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="rgb(0, 0, 220)", endColorstr="rgb(120, 100, 250)", GradientType=1);
+    cursor: default;
+    color: wheat;
+    font-weight: 700;
+    font-size: medium;
+    padding: 1%;
+    max-width: 80%;
+    text-align: center;
+    margin: 0;
+    animation-name: label-p-box-shadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    transition: all 0.3s ease-in-out;
+}
+
+p:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px white !important;
+}
+
+div#copyright-footer {
+    background-color: rgb(18, 18, 209);
+    border-radius: 20px 20px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+    width: 100%;
+    transition: 0.7s;
+    color: rgba(235, 235, 235, 0.971);
+}
+
+div#copyright-footer:active {
+    transition: 1s;
+    color: cyan !important;
+    background-color: navy;
+    transform: rotateX(50deg) translateY(30px);
+}
+
+div#copyright-footer label {
+    text-shadow: -5px -1px 10px lightblue;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#VGames-creation,
+#about-vidit {
+    background-color: rgba(8, 8, 99, 0.5);
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    padding-bottom: 1%;
+}
+
+ul#game-list {
+    text-align: left;
+    color: moccasin;
+    font-weight: 700;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+ul#game-list>li {
+    width: 90%;
+    margin-bottom: 7px;
+}
+
+ul#game-list>li>button {
+    font-weight: 600 !important;
+    padding: 10px 20px;
+    border-radius: 16px;
+}
+
+.modal-dialog {
+    width: 90%;
+    height: 100% !important;
+}
+
+#modal-body {
+    background-color: white;
+}
+
+h4 {
+    background-color: #f5f5f5;
+    line-height: 2;
+    margin: 0;
+}
+
+div#custom-context-menu {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background-color: lightblue;
+    border: 2px solid blue;
+    color: navy;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+div#custom-context-menu>ul#option-list {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+div#custom-context-menu>ul#option-list>li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+div#custom-context-menu>ul#option-list>li:hover {
+    background-color: #f0f0f0;
+}
+
+div#custom-context-menu>ul#option-list>li#special-li-1 {
+    font-weight: bolder;
+}
+
+#VGames-creation label {
+    font-size: large;
+    color: #f1f1f1;
+    background-color: rgba(0, 0, 128, 0.24);
+    padding: 5px;
+    border-radius: 5px;
+    animation-name: label-p-box-shadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    transition: all 0.3s ease-in-out;
+}
+
+#VGames-creation label:hover {
+    background-color: rgba(10, 10, 135, 0.4);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px #fff !important;
+}
+
+button:not([onclick="//empty"]) {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(68, 16, 211) 0%, rgb(20, 55, 209) 100%);
+}
+
+#VGames-creation button[onclick="//empty"] {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 2, 99) 0%, rgb(187, 20, 209) 100%);
+}
+
+button {
+    background-repeat: no-repeat;
+    color: rgb(230, 228, 252);
+    box-shadow: 0px 0px 13px lightblue;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: #fff !important;
+    box-shadow: 0px 0px 17px #fff;
+    transform: scale(1.04);
+}
+
+#about-vidit button {
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 4px !important;
+}
+
+button:active {
+    color: #23a;
+}
+
+button:focus {
+    color: aqua !important;
+}
+
+#all-creations button {
+    border-radius: 15px;
+}
+
+img#profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 35px rgb(240, 240, 145);
+    overflow: hidden;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out,
+        box-shadow 0.5s ease-in-out;
+}
+
+img#profile-pic:hover {
+    box-shadow: 0px 0px 25px rgb(240, 240, 145),
+        -5px -5px 45px rgb(172, 231, 231),
+        5px 5px 45px rgb(144, 130, 202);
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* Animation definitions */
+@keyframes label-p-box-shadow {
+
+    0%,
+    100% {
+        box-shadow: -10px -2px 15px #ccc;
+    }
+
+    50% {
+        box-shadow: 10px 2px 15px #fff;
+    }
+}
