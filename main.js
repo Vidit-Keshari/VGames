@@ -10,7 +10,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
         x = e.clientX;
         y = e.clientY;
-        console.log(x, y);
 
         customMenu.style.display = "block";
 
@@ -49,6 +48,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
     randomQuote();
+    findClass();
 });
 
 function webOpen(CODE) {
@@ -128,4 +128,52 @@ function randomQuote() {
     const element = document.getElementById("quote");
     var idx = Math.floor(Math.random() * quotes.length);
     element.innerText = quotes[idx];
+}
+
+function findClass() {
+    const ele = document.getElementById("class");
+    const year = new Date().getFullYear();
+    const month = new Date().getMonth() + 1;
+    if (!ele) {
+        console.error("Element with id 'class' not found!");
+        return;
+    }
+    if (year > 2029 || (month >= 4 && year > 2028)) {
+        ele.innerText = "College";
+        return;
+    }
+    if (month >= 4) {
+        ele.innerText = toRoman(year - 2016);
+    } else {
+        ele.innerText = toRoman(year - 2017);
+    }
+}
+
+function toRoman(num) {
+    const romanMap = [
+        { value: 1000, numeral: "M" },
+        { value: 900, numeral: "CM" },
+        { value: 500, numeral: "D" },
+        { value: 400, numeral: "CD" },
+        { value: 100, numeral: "C" },
+        { value: 90, numeral: "XC" },
+        { value: 50, numeral: "L" },
+        { value: 40, numeral: "XL" },
+        { value: 10, numeral: "X" },
+        { value: 9, numeral: "IX" },
+        { value: 5, numeral: "V" },
+        { value: 4, numeral: "IV" },
+        { value: 1, numeral: "I" }
+    ];
+
+    let result = "";
+
+    for (const { value, numeral } of romanMap) {
+        while (num >= value) {
+            result += numeral;
+            num -= value;
+        }
+    }
+
+    return result;
 }
