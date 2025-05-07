@@ -3,6 +3,9 @@ VGames' official site is now out! Find out our games, our works, about us and mo
 Check out now:- [VGames](https://vidit-keshari.github.io/VGames).
 
 ## Version history:-
+### v.1.2 Minor update:-
+- Minor bug fix
+
 ### v.1.1 Class update:
 - Added dynamic changing of Vidit Keshari's acadmic session based on date.
 - Improved styles.
