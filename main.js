@@ -35,8 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     window.addEventListener('keydown', e => {
-        key = e.key;
-        if (!window.localStorage.getItem("player") == "Vidit Keshari") {
+        if (window.localStorage.getItem("player") !== "Vidit Keshari") {
             if (((e.ctrlKey && e.shiftKey) && (e.key == "I")) || ((e.ctrlKey && e.shiftKey) && (e.key == "J")) || (e.key == "F12")) {
                 e.preventDefault();
             }
@@ -47,6 +46,11 @@ window.addEventListener("DOMContentLoaded", () => {
             document.getElementById("custom-context-menu").style.top = `${50}%`;
         }
     });
+
+    document.addEventListener("copy", () => {
+        window.navigator.clipboard.writeText("I won't let you copy anything that easily!");
+    });
+
     randomQuote();
     findClass();
 });
