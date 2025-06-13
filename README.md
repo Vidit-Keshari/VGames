@@ -3,6 +3,9 @@ VGames' official site is now out! Find out our games, our works, about us and mo
 Check out now:- [VGames](https://vidit-keshari.github.io/VGames).
 
 ## Version history:-
+### v.1.3 Minor update:-
+- Minor bux fixes
+
 ### v.1.2 Minor update:-
 - Minor bug fix
 
