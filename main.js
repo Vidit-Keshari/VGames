@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
             }
         }
-        if (e.altKey && key == "c") {
+        if (e.altKey && e.key == "c") {
             document.getElementById("custom-context-menu").style.display = "absolute";
             document.getElementById("custom-context-menu").style.left = `${50}%`;
             document.getElementById("custom-context-menu").style.top = `${50}%`;
