@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         }
         if (e.altKey && e.key == "c") {
-            document.getElementById("custom-context-menu").style.display = "absolute";
+            document.getElementById("custom-context-menu").style.display = "block";
             document.getElementById("custom-context-menu").style.left = `${50}%`;
             document.getElementById("custom-context-menu").style.top = `${50}%`;
         }
